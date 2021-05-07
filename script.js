@@ -18,14 +18,12 @@ function clickImage() {
 
     image.style.transform = ``
     rotation = 0
-  }
-  else {
+  } else {
     let diff = Math.abs(randomNumber - rotation)
 
     if (diff == 0) {
       messageParagraph.innerHTML = `You got it exactly, nice job!`
-    }
-    else {
+    } else {
       messageParagraph.innerHTML = `Rotation is ${rotation}. You were off by ${diff}.`
     }
 
